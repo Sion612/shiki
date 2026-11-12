@@ -1,0 +1,20 @@
+{
+  "name": "example-offload-worker",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@shikijs/langs": "workspace:*",
+    "@shikijs/themes": "workspace:*",
+    "shiki": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "catalog:cli",
+    "vite": "catalog:bundling"
+  }
+}

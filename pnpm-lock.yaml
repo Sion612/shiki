@@ -802,6 +802,25 @@ importers:
         specifier: catalog:docs
         version: 3.5.44(typescript@6.0.3)
 
+  examples/offload-worker:
+    dependencies:
+      '@shikijs/langs':
+        specifier: workspace:*
+        version: link:../../packages/langs
+      '@shikijs/themes':
+        specifier: workspace:*
+        version: link:../../packages/themes
+      shiki:
+        specifier: workspace:*
+        version: link:../../packages/shiki
+    devDependencies:
+      typescript:
+        specifier: catalog:cli
+        version: 6.0.3
+      vite:
+        specifier: catalog:bundling
+        version: 8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1)
+
   packages/cli:
     dependencies:
       '@shikijs/vscode-textmate':

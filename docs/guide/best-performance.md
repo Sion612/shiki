@@ -88,8 +88,4 @@ Check the [RegExp Engines](/guide/regex-engines) guide for more details.
 
 Shiki highlights code using regular expressions, which can be CPU-intensive. You can offload the highlighting work to a Web Worker/Node Worker to avoid blocking the main thread.
 
-::: info
-
-🚧 We are still working on a guide for creating workers easily.
-
-:::
+The [Web Worker example](https://github.com/shikijs/shiki/tree/main/examples/offload-worker) shows how to bundle a worker with Vite, reuse one highlighter inside it, and match each response to its request.

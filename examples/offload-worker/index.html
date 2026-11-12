@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highlight TypeScript in a Web Worker</title>
+    <style>
+      textarea { box-sizing: border-box; max-width: 100%; }
+      #output pre { overflow-x: auto; }
+    </style>
+  </head>
+  <body>
+    <h1>Highlight TypeScript in a Web Worker</h1>
+    <form id="highlight">
+      <label for="code">TypeScript source</label><br>
+      <textarea id="code" rows="5" cols="40">const answer: number = 42</textarea><br>
+      <button type="submit">Highlight</button>
+    </form>
+    <div id="output" aria-live="polite"></div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
